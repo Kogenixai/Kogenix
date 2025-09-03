@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github , Youtube} from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -35,34 +35,57 @@ export const ContactSection = () => {
       [e.target.name]: e.target.value
     }));
   };
+const contactInfo = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "kogenix.ai@gmail.com",
+    href: "mailto:kogenix.ai@gmail.com"
+  },
+{
+    icon: Phone, // Use one icon to represent both
+    label: "Phone / WhatsApp",
+    value: "+91 84380 61354, +91 98765 43210",
+    href: "tel:+918438061354" // first number is clickable
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "India",
+    href: "#"
+  }
+];
+  // const contactInfo = [
+  //   {
+  //     icon: Mail,
+  //     label: "Email",
+  //     value: "kogenix.ai@gmail.com",
+  //     href: "mailto:kogenix.ai@gmail.com"
+  //   },
+  //   {
+  //     icon: Phone,
+  //     label: "Phone",
+  //     value: "+91 84380 61354",
+  //     href: "tel:+91 84380 61354"
+  //   },
+  //   {
+  //     icon: MapPin,
+  //     label: "Location",
+  //     value: "India",
+  //     href: "#"
+  //   }
+  // ];
 
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "kogenix.ai@gmail.com",
-      href: "mailto:kogenix.ai@gmail.com"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 84380 61354",
-      href: "tel:+91 84380 61354"
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Saravanampatti, coimbatore 641049",
-      href: "#"
-    }
-  ];
-
- const socialLinks = [
+//  const socialLinks = [
+//   { icon: Linkedin, href: "#", label: "LinkedIn", target: "_blank", rel: "noopener noreferrer" },
+//   { icon: Twitter, href: "#", label: "Twitter", target: "_blank", rel: "noopener noreferrer" },
+//   { icon: Github, href: "https://github.com/Kogenixai", label: "GitHub", target: "_blank", rel: "noopener noreferrer" }
+// ];
+const socialLinks = [
   { icon: Linkedin, href: "#", label: "LinkedIn", target: "_blank", rel: "noopener noreferrer" },
-  { icon: Twitter, href: "#", label: "Twitter", target: "_blank", rel: "noopener noreferrer" },
+  { icon: Youtube, href: "#", label: "YouTube", target: "_blank", rel: "noopener noreferrer" }, // Replace Mail with YouTube icon if installed
   { icon: Github, href: "https://github.com/Kogenixai", label: "GitHub", target: "_blank", rel: "noopener noreferrer" }
 ];
-
 
   return (
     <section id="contact" className="py-24 px-6">

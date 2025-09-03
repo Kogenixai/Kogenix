@@ -123,10 +123,19 @@ export const Navigation = () => {
   const { theme, setTheme } = useTheme();
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Products", href: "#products" },
-    { name: "Contact", href: "#contact" },
+    // { name: "About", href: "#about" },
+    // { name: "Services", href: "#services" },
+    // { name: "Products", href: "#products" },
+    // { name: "Contact", href: "#contact" },
+   
+  { name: "About", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Products", href: "#products" },
+  { name: "Contact", href: "#contact" },
+  { name: "life@Kogenix", href: "#life@Kogenix" }, // email link
+  { name: "Careers", href: "#careers" }, // internal section or page
+
+
   ];
 
   return (

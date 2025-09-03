@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { Target, Zap, TrendingUp } from "lucide-react";
 
 export const AboutSection = () => {
+
+
+  const fullContent = "Kogenix.ai is an innovative organization combining a learning hub and an innovation hub. We offer training program to empower individuals and institutions. Our expertise extends to product development and consulting services, leveraging artificial intelligence to solve complex industry problems and drive digital transformation. At Kogenix, we turn challenges into scalable, tech-driven solutions for a wide range of industries."
+
   const missions = [
     {
       icon: Target,
@@ -38,7 +42,19 @@ export const AboutSection = () => {
             to achieve unprecedented efficiency and innovation.
           </p>
         </motion.div>
-
+<motion.div
+    initial={{ opacity: 0, height: 0 }}
+    animate={{ opacity: 1, height: "auto" }}
+    exit={{ opacity: 0, height: 0 }}
+    transition={{ duration: 0.5, ease: "easeInOut" }}
+    className="overflow-hidden max-w-3xl mx-auto"
+  >
+    <div className="bg-background/50 dark:bg-background/30 backdrop-blur-sm rounded-2xl mb-4 p-2 border border-border">
+      <p className="text-base text-muted-foreground leading-relaxed">
+        {fullContent}
+      </p>
+    </div>
+  </motion.div>
         {/* Mission Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {missions.map((mission, index) => (

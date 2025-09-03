@@ -313,7 +313,7 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl px-6">
         {/* Badge */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -323,12 +323,12 @@ export const HeroSection = () => {
           <span className="text-sm font-medium tracking-wide">
             AI Innovation • Neural Evolution
           </span>
-        </motion.div>
+        </motion.div> */}
 
         {/* Brand Name (Outline Text) */}
         <h1>
           <SplitText
-            text="Kogenix"
+            text="Kogenix.in"
             className="text-7xl md:text-9xl font-extrabold mb-4 
                        light:text-black dark:text-white
                        border-text"
@@ -401,7 +401,7 @@ export const HeroSection = () => {
               AI-powered learning and innovation hub transforming challenges into scalable, tech-driven solutions.
             </p>
             
-            <motion.button
+            {/* <motion.button
               onClick={() => setIsExpanded(!isExpanded)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -414,7 +414,7 @@ export const HeroSection = () => {
               >
                 <ChevronRight className="w-4 h-4" />
               </motion.div>
-            </motion.button>
+            </motion.button> */}
           </motion.div>
 
           {/* Expanded Content */}
@@ -444,11 +444,28 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row justify-center gap-4 mb-16"
         >
-          <button className="btn-hero-primary group">
+          {/* <button className="btn-hero-primary group">
             <span>Get Started</span>
             <Zap className="ml-2 w-4 h-4 group-hover:animate-pulse" />
-          </button>
-          <button className="btn-hero-ghost">Explore AI Services</button>
+          </button> */}
+          <a 
+  href="https://docs.google.com/forms/d/e/1FAIpQLSfHBCrEWbVHJDTA-vjlYCNvtXzn3TzkpeGDIr8zKdUgYaR8XQ/viewform?usp=header" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="btn-hero-primary group">
+    <span>Get Started</span>
+    <Zap className="ml-2 w-4 h-4 group-hover:animate-pulse" />
+  </button>
+</a>
+
+          {/* <button className="btn-hero-ghost">Explore AI Services</button> */}
+          <a href="#services">
+  <button className="btn-hero-ghost">
+    Explore AI Services
+  </button>
+</a>
+
         </motion.div>
 
         {/* Scroll Indicator */}
