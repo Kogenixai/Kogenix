@@ -45,7 +45,7 @@ const contactInfo = [
 {
     icon: Phone, // Use one icon to represent both
     label: "Phone / WhatsApp",
-    value: "+91 84380 61354, +91 98765 43210",
+    value: "+91 84380 61354, +91 90031 03146",
     href: "tel:+918438061354" // first number is clickable
   },
   {

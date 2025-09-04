@@ -328,7 +328,7 @@ export const HeroSection = () => {
         {/* Brand Name (Outline Text) */}
         <h1>
           <SplitText
-            text="Kogenix.in"
+            text="KogenixAI"
             className="text-7xl md:text-9xl font-extrabold mb-4 
                        light:text-black dark:text-white
                        border-text"
