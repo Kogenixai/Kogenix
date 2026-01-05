@@ -9,6 +9,7 @@ import SplashCursor from "@/components/ui/SplashCursor"
 
 
 
+
 const queryClient = new QueryClient();
 
 const App = () => (

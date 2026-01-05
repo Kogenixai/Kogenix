@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github , Youtube} from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Github , Youtube, Instagram} from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -84,7 +84,7 @@ const contactInfo = [
 const socialLinks = [
   { icon: Linkedin, href: "#", label: "LinkedIn", target: "_blank", rel: "noopener noreferrer" },
   { icon: Youtube, href: "#", label: "YouTube", target: "_blank", rel: "noopener noreferrer" }, // Replace Mail with YouTube icon if installed
-  { icon: Github, href: "https://github.com/Kogenixai", label: "GitHub", target: "_blank", rel: "noopener noreferrer" }
+  { icon: Instagram, href: "https://github.com/Kogenixai", label: "GitHub", target: "_blank", rel: "noopener noreferrer" }
 ];
 
   return (

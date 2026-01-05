@@ -18,7 +18,7 @@ export const TestimonialsSection = () => {
       company: "AI & Data Science Dept, KEC",
       avatar: "K",
       rating: 5,
-      content: "The hands-on approach made complex AI concepts crystal clear. Building applications with RAG and developing agents through practical sessions gave me the confidence to implement these technologies immediately.",
+      content: "The hands-on approach made complex AI concepts easy to understand. Building applications using RAG and developing agents through practical sessions gave me the confidence to implement these technologies immediately.",
       industry: "Education",
       comingSoon: false
     },
@@ -28,7 +28,7 @@ export const TestimonialsSection = () => {
       company: "Computer Science Dept, KEC",
       avatar: "D",
       rating: 5,
-      content: "The training provided a solid practical foundation with exceptional reference materials. The trainers' explanations of LLMs and Agent systems were outstanding, making advanced concepts accessible and actionable.",
+      content: "The training provided a strong practical foundation with excellent reference materials. The trainers explained LLMs and agent systems clearly, making advanced concepts both accessible and actionable.",
       industry: "Computer Science",
       comingSoon: false
     },
@@ -38,7 +38,7 @@ export const TestimonialsSection = () => {
       company: "CSE Department, KEC", 
       avatar: "C",
       rating: 5,
-      content: "Gained practical knowledge in GenAI and Agentic AI that I can apply immediately. The combination of clear concept teaching with hands-on experience created an excellent learning environment.",
+      content: "I gained practical knowledge in GenAI and Agentic AI that I can apply immediately. The combination of clear concept explanation and hands-on practice created an excellent learning environment.",
       industry: "Engineering",
       comingSoon: false
     },
@@ -48,7 +48,7 @@ export const TestimonialsSection = () => {
       company: "Computer Science, KEC", 
       avatar: "G",
       rating: 5,
-      content: "The trainers' patience, connectivity, and deep knowledge made this incredibly valuable. Even with complex topics, the delivery was exceptional. I gained insights I can immediately apply in my teaching.",
+      content: "The trainers’ patience, clarity, and deep subject knowledge made this training extremely valuable. Even complex topics were delivered clearly, and I gained insights that I can directly apply in my teaching.",
       industry: "Computer Science",
       comingSoon: false
     },
@@ -58,7 +58,7 @@ export const TestimonialsSection = () => {
       company: "AI & ML Department, KEC", 
       avatar: "P",
       rating: 5,
-      content: "In just one week, we covered everything from fundamentals to advanced concepts like MCP. The structured approach with regular recaps ensured nothing was missed. Every session added real value to my skillset.",
+      content: "In just one week, we covered everything from fundamentals to advanced concepts like MCP. The structured approach and regular recaps ensured complete understanding, and every session added real value to my skill set.",
       industry: "Artificial Intelligence",
       comingSoon: false
     },
@@ -68,7 +68,7 @@ export const TestimonialsSection = () => {
       company: "Computer Science, KEC", 
       avatar: "D",
       rating: 5,
-      content: "Well-organized and highly informative program. The hands-on sessions transformed complex AI concepts into practical, easy-to-understand applications. It significantly enhanced both my practical and teaching capabilities.",
+      content: "The program was well-organized and highly informative. Hands-on sessions transformed complex AI concepts into practical and easy-to-understand applications, greatly enhancing my teaching and practical skills.",
       industry: "Computer Science",
       comingSoon: false
     },
@@ -78,7 +78,7 @@ export const TestimonialsSection = () => {
       company: "Computer Technology, KEC", 
       avatar: "R",
       rating: 5,
-      content: "The sessions were clear and research-oriented, providing excellent depth in GenAI concepts. The approach perfectly balanced theory with practical implementation, making it ideal for academic professionals.",
+      content: "The sessions were clear and research-oriented, providing excellent depth in GenAI concepts. The balance between theory and practical implementation made it ideal for academic professionals.",
       industry: "Research",
       comingSoon: false
     },
@@ -88,7 +88,7 @@ export const TestimonialsSection = () => {
       company: "AI & Data Science, KEC", 
       avatar: "R",
       rating: 5,
-      content: "From NLP fundamentals to Generative and Agentic AI, each concept was explained clearly. Learning to use MCP as both client and server was particularly valuable. The theory combined with hands-on practice made understanding effortless.",
+      content: "From NLP fundamentals to Generative and Agentic AI, each concept was explained clearly. Learning to use MCP as both client and server was especially valuable, and the hands-on approach made learning effortless.",
       industry: "Data Science",
       comingSoon: false
     },
@@ -98,7 +98,7 @@ export const TestimonialsSection = () => {
       company: "AI & Data Science, KEC", 
       avatar: "C",
       rating: 5,
-      content: "The journey from NLP to agents was incredibly fruitful. The trainers answered every question with care and gave individual attention. Their approachable nature made learning comfortable and highly effective.",
+      content: "The journey from NLP to agent development was highly rewarding. The trainers answered every question patiently and gave individual attention, creating a comfortable and effective learning experience.",
       industry: "Artificial Intelligence",
       comingSoon: false
     },
@@ -108,7 +108,7 @@ export const TestimonialsSection = () => {
       company: "Computer Technology, KEC", 
       avatar: "P",
       rating: 5,
-      content: "This training took me from basics to advanced concepts seamlessly. Learning to create agents from scratch with clear coding examples was invaluable. The teaching methodology combined clean knowledge delivery with practical application perfectly.",
+      content: "This training smoothly covered concepts from basics to advanced levels. Learning to create agents from scratch with clear coding examples was extremely valuable, and the teaching approach perfectly blended theory with practice.",
       industry: "Technology",
       comingSoon: false
     }
@@ -280,7 +280,7 @@ export const TestimonialsSection = () => {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: 0.4 + i * 0.1 }}
                     >
-                      <Star className="w-5 h-5 fill-current opacity-40" />
+                      <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     </motion.div>
                   ))}
                 </motion.div>
