@@ -88,7 +88,8 @@ const socialLinks = [
 ];
 
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-24 px-6 relative">
+      
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div

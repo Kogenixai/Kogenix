@@ -45,21 +45,39 @@ export const CaseStudiesSection = () => {
   ];
 
   return (
-    <section id="case-studies" className="py-24 px-6 bg-muted/20">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative min-h-screen py-24 px-4 sm:px-6 lg:px-12 overflow-hidden" style={{ fontFamily: "'Inter', sans-serif", lineHeight: '1.7' }}>
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:80px_80px]" />
+      
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse" style={{ animationDuration: '8s' }} />
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+
+      <div className="relative z-10 w-full max-w-6xl mx-auto">
+        
         {/* Section Header */}
-        <motion.div
+          <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-24"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Success Stories</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover how Kogenix AI solutions have transformed businesses across industries, 
-            delivering measurable results and competitive advantages.
-          </p>
+         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-8" 
+              style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.02em' }}>
+            <span className="block bg-gradient-to-br from-foreground via-foreground to-foreground/60 bg-clip-text text-transparent">
+             Success Stories
+            </span>
+    </h1>
+    <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
+  Real-world success powered by  
+  <span className="text-foreground font-semibold"> intelligent AI solutions </span>
+  delivering measurable outcomes
+  <span className="block mt-4 text-lg sm:text-xl text-muted-foreground/80">
+    from operational efficiency and cost savings to innovation-driven growth across industries.
+  </span>
+</p>
+
+          
         </motion.div>
 
         {/* Case Studies Grid */}
@@ -167,3 +185,5 @@ export const CaseStudiesSection = () => {
     </section>
   );
 };
+
+

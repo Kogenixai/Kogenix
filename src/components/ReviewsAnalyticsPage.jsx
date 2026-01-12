@@ -112,7 +112,7 @@ export const ReviewsAnalyticsPage = () => {
           </ChartCard>
 
           {/* RECOMMENDATION */}
-          <ChartCard title="Recommendation Split">
+          {/* <ChartCard title="Recommendation Split">
             <ResponsiveContainer width="100%" height={200}>
               <PieChart>
                 <Pie
@@ -132,7 +132,7 @@ export const ReviewsAnalyticsPage = () => {
                 <Tooltip />
               </PieChart>
             </ResponsiveContainer>
-          </ChartCard>
+          </ChartCard> */}
 
           {/* DEPARTMENT DISTRIBUTION */}
           <ChartCard title="Department Participants">
@@ -150,12 +150,12 @@ export const ReviewsAnalyticsPage = () => {
 
             </ResponsiveContainer>
           </ChartCard>
+
+
+        </div>
 <ChartCard title="Participant Feedback Word Cloud">
   <ReviewsWordCloud words={words} />
 </ChartCard>
-
-        </div>
-
       </div>
     </section>
   );
