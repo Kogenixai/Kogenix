@@ -2,7 +2,7 @@
 
 import  AppLayout  from './AppLayout'; 
 import {NeuralBackground } from '@/components/NeuralBackground'
-import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet, useLocation,HashRouter } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navigation } from "@/components/Navigation";
@@ -26,8 +26,8 @@ const Layout = () => {
   return (
     <>
       <NeuralBackground />
-      <Navigation />
-      <Footer/>
+     <Navigation />
+
       <div className="absolute inset-0 z-[1]">
         <div className="absolute inset-0 z-[1]">
           <AnimatedGridPattern
@@ -51,6 +51,9 @@ const Layout = () => {
           >
             <Outlet />
           </motion.div>
+        
+<Footer />
+
         
     </>
   );
@@ -83,7 +86,7 @@ const InnovationHubPage = () => (
 
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
   <ScrollToTop />
   
     <ThemeProvider>
@@ -103,7 +106,7 @@ const App = () => (
       </Routes>
      <Footer/>
     </ThemeProvider>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
