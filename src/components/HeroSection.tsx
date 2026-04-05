@@ -15,7 +15,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-4 sm:px-6 lg:px-8" style={{ fontFamily: "'Inter', sans-serif" }}>
+    <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-20" style={{ fontFamily: "'Inter', sans-serif" }}>
       {/* Refined Background */}
       
       {/* Main Content */}

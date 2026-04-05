@@ -53,15 +53,19 @@ const words: Word[] = Object.keys(wordCounts).map(key => ({
 }));
 
 const options = {
-  rotations: 5,
-  rotationAngles: [-60, -30, 0, 30, 60],
-  fontSizes: [18, 80],
+  rotations: 3,
+  rotationAngles: [-45, -15, 0, 15, 45],
+  fontSizes: [16, 88] as [number, number],
   scale: "sqrt",
-  colors: ["#1f2937", "#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"],
-  fontFamily: "Arial Black, Gadget, sans-serif",
+  colors: [
+    "#a78bfa", "#60a5fa", "#34d399",
+    "#fbbf24", "#f87171", "#fb923c",
+    "#38bdf8", "#e879f9", "#4ade80",
+  ],
+  fontFamily: "'Space Grotesk', 'Arial Black', sans-serif",
   enableTooltip: true,
-  deterministic: false, // random positions
-  padding: 5,
+  deterministic: false,
+  padding: 4,
   spiral: "archimedean",
 };
 
@@ -75,7 +79,7 @@ export const ReviewsWordCloud: React.FC<ReviewsWordCloudProps> = () => {
 
   return (
     <div
-      style={{ width: "100%", height: 500, position: "relative" }}
+      style={{ width: "100%", height: 580, position: "relative" }}
       onMouseEnter={handleMouseEnter} // reshuffle on hover
     >
       <ReactWordcloud key={cloudKey} words={words} options={options} />

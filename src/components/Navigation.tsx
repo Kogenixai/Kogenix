@@ -311,7 +311,7 @@ export const Navigation = () => {
                                 to={child.to}
                                 onClick={() => setOpenDropdown(null)}
                                 className={({ isActive }) =>
-                                  `block px-4 py-3 text-sm text-foreground80 hover:text-foreground hover:bg-foreground/10 dark:text-black transition-all ${
+                                  `block px-4 py-3 text-sm text-foreground/80 hover:text-foreground dark:text-foreground/80 dark:hover:text-foreground hover:bg-foreground/10 dark:hover:bg-foreground/10 transition-all ${
                                     isActive ? 'text-foreground bg-foreground/15 font-semibold' : ''
                                   }`
                                 }
